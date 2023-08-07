@@ -12,7 +12,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 @Endpoint
 public class CitizenEndpoint {
 
-    private static final String NAMESPACE_URI = "http://www.citizen.soap.soapdemo.webservices.com/";
+    private static final String NAMESPACE_URI = "http://citizen.soap.soapdemo.webservices.com/";
 
     private final CitizenRepository citizenRepository;
 

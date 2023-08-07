@@ -31,7 +31,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CountriesPort");
         wsdl11Definition.setLocationUri("/ws");
-        wsdl11Definition.setTargetNamespace("http://www.country.soap.soapdemo.webservices.com/");
+        wsdl11Definition.setTargetNamespace("http://country.soap.soapdemo.webservices.com/");
         wsdl11Definition.setSchema(countriesSchema());
         return wsdl11Definition;
     }
@@ -41,7 +41,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CitizensPort");
         wsdl11Definition.setLocationUri("/ws");
-        wsdl11Definition.setTargetNamespace("http://www.citizen.soap.soapdemo.webservices.com/");
+        wsdl11Definition.setTargetNamespace("http://citizen.soap.soapdemo.webservices.com/");
         wsdl11Definition.setSchema(citizensSchema());
         return wsdl11Definition;
     }
@@ -51,7 +51,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("AllPort");
         wsdl11Definition.setLocationUri("/ws");
-        wsdl11Definition.setTargetNamespace("http://www.soap.soapdemo.webservices.com/");
+        wsdl11Definition.setTargetNamespace("http://soap.soapdemo.webservices.com/");
         wsdl11Definition.setSchemaCollection(getXsdCollection());
         return wsdl11Definition;
     }
