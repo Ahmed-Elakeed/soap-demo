@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.citizen.soap.soapdemo.webservices.com/"
+           targetNamespace="http://www.citizen.soap.soapdemo.webservices.com/" elementFormDefault="qualified">
+
+    <xs:element name="getCitizenRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCitizenResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="citizen" type="tns:citizen"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="citizen">
+        <xs:sequence>
+            <xs:element name="fullName" type="xs:string"/>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="age" type="xs:int"/>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="gender" type="tns:gender"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="gender">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MALE"/>
+            <xs:enumeration value="FEMALE"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
