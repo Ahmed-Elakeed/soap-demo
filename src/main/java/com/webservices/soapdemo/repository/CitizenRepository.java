@@ -17,8 +17,8 @@ public class CitizenRepository {
     @PostConstruct
     public void initData(){
         citizens.put("29908171401918",this.generateCitizen("Ahmed Zakaria Elakeed","29908171401918","Egypt, Benha",24,Gender.MALE));
-        citizens.put("39908171401423",this.generateCitizen("Yahia Mohamed Elakeed","39908171401423","Egypt, Cairo",24,Gender.MALE));
-        citizens.put("39908521401423",this.generateCitizen("Hagar Mohamed Youssef","39908521401423","Egypt, Cairo",24,Gender.FEMALE));
+        citizens.put("39908171401423",this.generateCitizen("Mo'men Magdy Sayed","39908171401423","Egypt, Cairo",26,Gender.MALE));
+        citizens.put("39908521401423",this.generateCitizen("Moaz Basuony Melegi","39908521401423","Egypt, Cairo",35,Gender.FEMALE));
     }
 
     public Citizen findCitizen(String id){
